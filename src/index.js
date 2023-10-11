@@ -4,10 +4,13 @@ import App from './App';
 import GlobalStyle from './globalStyles'
 
 
-ReactDOM.render(<>
-    <App /> <GlobalStyle /> </>,
-     document.getElementById('root'));
+const root = document.getElementById("root");
+const rootElement = (<>
+    <App /> <GlobalStyle /> </>);
 
+    const reactRoot = ReactDOM.createRoot (root);
+    reactRoot.render(rootElement);     
 
+   
 
 
