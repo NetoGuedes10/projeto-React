@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import Backgroud from "./Assets/backgrond1.svg"
+import styled from "styled-components";
+import Backgroud from "../../Assets/backgroud.svg";
 
 export const Image = styled.img``;
 
@@ -27,7 +27,7 @@ background: linear-gradient(157deg, rgba(255, 255, 255, 0.60) 0.84%, rgba(255, 2
 padding: 50px 30px;
    display: flex;
    flex-direction: column;
-
+backdrop-filter: column;
    height: 100vh;
 `;
 
@@ -40,46 +40,21 @@ font-weight: 700;
 line-height: normal;
 margin-bottom: 80px;
 
-`
-
-export const InputLabel = styled.p`
-
-   letter-spacing: -0.40px;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 18px;
-   line-height: 22px;
-   color: #eeeeee;
-
-   margin-left: 25px;
-`
-
-export const Input = styled.input`
-
-border-radius: 14px;
-background: rgba(255, 255, 255, 0.25);
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-width: 342px;
-height:  58px;
-border: none;
-outline: none;
-padding-left: 25px;
-margin-bottom: 34px;
-
-color: #FFF;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
 `;
+
+
+
+
+
+
 
 export const Button = styled.button`
 width: 342px;
 height: 74px;
 border-radius: 14px;
-background: var(--templates-5-color-1, rgba(0, 0, 0, 0.80));
-border:none;
-
+background: transparent;
+border: 1px solid #ffffff;
+margin-top: 120px;
 font-style: normal;
 font-weight: bold;
 font-size: 17px;
@@ -92,7 +67,6 @@ align-items: center;
 justify-content: center;
 gap: 20px;
 
-
 &:hover{
    opacity: 0.8;
 }
@@ -101,7 +75,14 @@ gap: 20px;
    opacity: 0.5;
 }
 
+
+
+img{
+   transform: rotateY(180deg);
+}
 `;
+
+
 
 export const User = styled.li`
 
