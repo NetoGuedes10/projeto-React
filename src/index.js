@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './containers/Home';
 import GlobalStyle from './globalStyles';
-import Users  from './containers/users';
+import Routes from './routes'
+
 
 
 const root = document.getElementById("root");
