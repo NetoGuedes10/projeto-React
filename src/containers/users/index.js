@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Avatar from "../../Assets/avatar.svg";
 import Arrow from "../../Assets/arrow.svg";
@@ -9,6 +10,8 @@ import { Container, H1, Image, ContainerItens, Button, User } from "./styles.js"
 
 function Users() {
   const [users, setUsers] = useState([]);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     async function fetchUsers() {
@@ -23,6 +26,13 @@ function Users() {
     const newUsers = users.filter(user => user.id !== userId);
     setUsers(newUsers);
   }
+
+ function goBackPage(){
+   navigate("/");
+ }
+
+
+
 
   return (
     <Container>

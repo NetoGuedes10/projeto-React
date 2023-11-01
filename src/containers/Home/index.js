@@ -1,4 +1,5 @@
-import React, { useState, useRef, } from "react"
+import React, { useState, useRef, } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import People from "../../Assets/people.svg";
 import Arrow from "../../Assets/arrow.svg";
@@ -9,6 +10,7 @@ import { Container, H1, Image, ContainerItens, InputLabel, Input, Button, } from
 function App() {
 
     const [users, setUsers] = useState([]);
+    const navigate = useNavigate();
     const inputName = useRef()
     const inputAge = useRef()
 
@@ -21,6 +23,8 @@ function App() {
         });
 
         setUsers([...users, newUser]);
+
+        navigate("/");
     }
 
    
