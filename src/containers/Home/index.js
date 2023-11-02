@@ -5,7 +5,7 @@ import People from "../../Assets/people.svg";
 import Arrow from "../../Assets/arrow.svg";
 
 
-import { Container, H1, Image, ContainerItens, InputLabel, Input, Button, } from "./styles.js";
+import { Container, H1, Image, ContainerItens, InputLabel, Input, Button,  } from "./styles.js";
 
 function App() {
 

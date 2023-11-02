@@ -12,7 +12,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   const navigate = useNavigate();
-
+  
   useEffect(() => {
     async function fetchUsers() {
       const { data: newUsers } = await axios.get("http://localhost:3001/users");
